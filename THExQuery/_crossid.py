@@ -1,3 +1,6 @@
+
+# outdated version of "cross_identify"
+
 def cross_identify(event, sources, catalogs,
                    source_filter=None, stellar_filter=None, astrom_tol=None,
                    seek_secondary=True, rank_func=None,
