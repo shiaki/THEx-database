@@ -127,8 +127,8 @@ if __name__ == '__main__':
         snapshots = db_client.xvalid.snapshots
         boneyard = db_client.xvalid.boneyard
 
-    # TEMP
-    sn_type_labels = defaultdict(list)
+    # DEBUG
+    # sn_type_labels = defaultdict(list)
     xvalid_events = None
 
     # iterate over the list, identify new events.
@@ -301,8 +301,8 @@ if __name__ == '__main__':
                     for rec_t in info_i['hostoffsetang'] \
                     if ('derived' not in rec_t) or (not rec_t['derived'])])
 
-        # FIX
-        for t in claimedtype_i: sn_type_labels[t].append(name_i)
+        # DEBUG
+        # for t in claimedtype_i: sn_type_labels[t].append(name_i)
 
         # refine classification
         claimedtype_i = rebuild_hierarchy(unify_labels( \
@@ -377,6 +377,8 @@ if __name__ == '__main__':
         print('Existing meta data updated:', name_i)
 
     # DEBUG
+    '''
     if not is_xvalid_run:
         with open('sn-type-labels.json', 'w') as f:
             json.dump(sn_type_labels, f, indent=4)
+    '''
