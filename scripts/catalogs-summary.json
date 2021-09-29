@@ -1,0 +1,211 @@
+{
+    "NED": {
+        "type": "vac",
+        "data_src": "vac",
+        "version": "NA",
+        "srcid_col": "object_name",
+        "zred_col": "redshift",
+        "coord_keys": [["ra", "dec"], ["ra(deg)", "dec(deg)"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "SIMBAD": {
+        "type": "vac",
+        "data_src": "vac",
+        "version": "NA",
+        "srcid_col": "main_id",
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["hour", "deg"],
+        "astrom_tol": 1.0
+    },
+    "HyperLEDA": {
+        "type": "vac",
+        "data_src": "local",
+        "version": "NA",
+        "srcid_col": "objname",
+        "zred_col": "v3k",
+        "coord_keys": [["al2000", "de2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 2.0
+    },
+
+    "GALEXMIS5": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "GR5",
+        "srcid_col": "objid",
+        "mag_col": ["nuv", "fuv"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "GALEXAIS67": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "GR67",
+        "srcid_col": "name",
+        "mag_col": ["nuvmag", "fuvmag"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+
+    "SDSS16pz": {
+        "type": "survey",
+        "data_src": "sdss",
+        "version": "DR16",
+        "srcid_col": "objid",
+        "mag_col": ["r", "i", "g", "z", "u"],
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "PS1v2": {
+        "type": "survey",
+        "data_src": "mast",
+        "version": "DR2",
+        "srcid_col": "objID",
+        "mag_col": ["rKronMag", "iKronMag", "gKronMag", "zKronMag", "yKronMag"],
+        "coord_keys": [["raStack", "decStack"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "DES2": {
+        "type": "survey",
+        "data_src": "datalab",
+        "version": "DR1",
+        "srcid_col": "coadd_object_id",
+        "mag_col": ["mag_auto_r", "mag_auto_i", "mag_auto_g", "mag_auto_z", "mag_auto_y"],
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "LS8pz": {
+        "type": "survey",
+        "data_src": "datalab",
+        "version": "DR8pz",
+        "srcid_col": "ls_id",
+        "mag_col": ["mag_g", "mag_r", "mag_z"],
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "SkyMapper2": {
+        "type": "survey",
+        "data_src": "local",
+        "version": "DR2",
+        "srcid_col": "object_id",
+        "mag_col": ["r_petro", "i_petro", "g_petro", "z_petro", "v_petro", "u_petro"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "VSTATLAS3": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "DR3",
+        "srcid_col": "name",
+        "mag_col": ["rpmag", "ipmag", "gpmag", "zpmag", "upmag"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "TwoMASSXSC": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "FINAL",
+        "srcid_col": "_2masx",
+        "mag_col": ["j.ext", "h.ext", "k.ext"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 2.0
+    },
+    "TwoMASSPSC": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "FINAL",
+        "srcid_col": "_2mass",
+        "mag_col": ["jmag", "hmag", "kmag"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "UKIDSSLAS9": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "DR9",
+        "srcid_col": "ulas",
+        "mag_col": ["ymag", "jmag1", "hmag", "kmag"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "VHS4": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "DR4",
+        "srcid_col": "name",
+        "mag_col": ["_tab1_37", "_tab1_59", "_tab1_83", "_tab1_107"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "AllWISE": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "FINAL",
+        "srcid_col": "allwise",
+        "mag_col": ["w1mag", "w2mag", "w3mag", "w4mag"],
+        "coord_keys": [["raj2000", "dej2000"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "unWISE1": {
+        "type": "survey",
+        "data_src": "datalab",
+        "version": "DR1",
+        "srcid_col": "unwise_objid",
+        "mag_col": ["mag_w1_vg", "mag_w2_vg"],
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "MPAJHU": {
+        "type": "survey",
+        "data_src": "local",
+        "version": "DR8",
+        "srcid_col": "SPECOBJID",
+        "zred_col": "Z",
+        "coord_keys": [["RA", "DEC"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 2.0
+    },
+    "NSA101": {
+        "type": "survey",
+        "data_src": "local",
+        "version": "1.0.1",
+        "srcid_col": "NSAID",
+        "zred_col": "Z",
+        "coord_keys": [["RA", "DEC"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "SCOS": {
+        "type": "survey",
+        "data_src": "local",
+        "version": "FINAL",
+        "srcid_col": "objID",
+        "coord_keys": [["ra", "dec"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 1.0
+    },
+    "Gaia2": {
+        "type": "survey",
+        "data_src": "vizier",
+        "version": "DR2",
+        "srcid_col": "source",
+        "coord_keys": [["ra_icrs", "de_icrs"]],
+        "coord_unit": ["deg", "deg"],
+        "astrom_tol": 0.01
+    }
+}

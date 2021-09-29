@@ -202,7 +202,7 @@ if __name__ == '__main__':
     pool = None
     if parallel_mode:
         pool = Pool(parallel_mode_N_proc)
-        pool.imap_unordered(dummy, range(512)) # force fork
+        # pool.imap_unordered(dummy, range(512)) # force fork
         # ^ Not necessary. YJ, 080919
 
     # initialize db connection.
